@@ -21,33 +21,33 @@ import static org.hamcrest.core.IsCollectionContaining.hasItem;
 public class CollectionMatchersTest {
 
     @Test
-    public void learningHasItem() throws Exception {
+    public void learningHasItem() {
         List<String> cloths = Lists.newArrayList(
                 "shirts", "shoes", "pants", "socks");
         assertThat(cloths,hasItem("shoes"));
     }
 
     @Test
-    public void learningHasItems() throws Exception {
+    public void learningHasItems() {
         List<String> cloths = Lists.newArrayList(
                 "shirts", "shoes", "pants", "socks");
         assertThat(cloths,hasItems("shoes", "socks"));
     }
 
     @Test
-    public void learningEmpty() throws Exception {
+    public void learningEmpty() {
         List<String> cloths = Lists.newArrayList();
         assertThat(cloths, empty());
     }
 
     @Test
-    public void learningNotEmpty() throws Exception {
+    public void learningNotEmpty() {
         List<String> cloths = Lists.newArrayList("pants");
         assertThat(cloths, not(empty()));
     }
 
     @Test
-    public void learningHasEntry() throws Exception {
+    public void learningHasEntry() {
         Person person1 = new Person("john", "doe");
         Person person2 = new Person("juan", "perez");
         Person person3 = new Person("lorem", "ipsum");
