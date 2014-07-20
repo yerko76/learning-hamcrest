@@ -1,4 +1,4 @@
 learning_hamcrest.*
 .idea
 /build
-w
+.gradle
